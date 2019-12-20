@@ -15,30 +15,39 @@
 </head>
 
 <body id="page-top primary-night">
-    <nav id="side-bar" class="laptop">
+    <nav id="side-bar" onmouseleave="closeSideBar();" class="laptop">
         <center>
             <div class="item-title primary-night col-sm-12">
                 <a onclick="changeHome();">
                     <h4>Home</h4>
                 </a>
             </div>
+            <div class="clearfix"></div>
             <div class="item col-md-12">
-                <div class="item-image">
-                    <img src="./img/profile.jpg">
+                <div class="item-image header-design">
+                    <img class="layer-50" src="./img/profile.jpg">
                 </div>
             </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 center">
+                <center>
+                    <span class="border-icon resume-color" style="width: 95%;" onclick="openLink('https://drive.google.com/open?id=1eMKs8Zvo37_aIguzM-IKnR8avf49znqy')" class="">RESUME / CV</span>
+                </center>
+            </div>
+            <div class="clearfix"></div>
             <div class="item-title primary-night col-sm-12">
                 <a>
                     <h4>
-                        <div onclick="openLink('https://www.linkedin.com/in/dhruv--agarwal/')" class="border-icon linkedin-color"><i class="fa fa-linkedin"></i></div>
-                        <div onclick="openLink('https://github.com/Dhruv-Aga')" class="border-icon github-color"><i class="fa fa-github-alt"></i></div>
-                        <div onclick="openLink('https://www.facebook.com/dhruvagarwal11')" class="border-icon facebook-color"><i class="fa fa-facebook-f"></i></div>
-                        <a href="mailto:dhruvaga11@gmail.com?Subject=Hello" target="_blank" class="border-icon google-color"><i class="fa fa-google"></i></a>
-                        <div onclick="openLink('https://angel.co/dhruv-agarwal-16')" class="border-icon github-color"><i class="fa fa-angellist"></i></div>
+                        <div data-toggle="tooltip" title="LinkedIn" onclick="openLink('https://www.linkedin.com/in/dhruv--agarwal/')" class="border-icon linkedin-color"><i class="fa fa-linkedin"></i></div>
+                        <div data-toggle="tooltip" title="Github" onclick="openLink('https://github.com/Dhruv-Aga')" class="border-icon github-color"><i class="fa fa-github-alt"></i></div>
+                        <div data-toggle="tooltip" title="Facebook" onclick="openLink('https://www.facebook.com/dhruvagarwal11')" class="border-icon facebook-color"><i class="fa fa-facebook-f"></i></div>
+                        <a href="mailto:dhruvaga11@gmail.com?Subject=Hello" data-toggle="tooltip" title="Email" target="_blank" class="border-icon google-color"><i class="fa fa-google"></i></a>
+                        <div data-toggle="tooltip" title="Angel.co" onclick="openLink('https://angel.co/dhruv-agarwal-16')" class="border-icon github-color"><i class="fa fa-angellist"></i></div>
                     </h4>
                 </a>
             </div>
         </center>
+        <div class="clearfix"></div>
         <div class="items-section col-md-12">
             <div onclick="changeBack('backend', 'background-black')" class="item col-md-12 background-black">
                 <div class="row">
@@ -76,7 +85,7 @@
                         <h4>Competetive Coding</h4>
                     </div>
                     <div class="item-description primary-complementary col-sm-12">
-                        HackerRANK
+                        HackerRanK
                     </div>
                 </div>
             </div>
@@ -87,14 +96,14 @@
             <h4 onclick="closeSideBar();" id="close">X</h4>
         </div>
         <div class="item-title nav-button">
-            <h4 onclick="openSideBar();" id="open">></h4>
+            <h4 onmouseover="openSideBar();" onclick="openSideBar();" id="open">></h4>
         </div>
         <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="primary-black col-md-12">
-                        <div class=" open-description highlight-box general">
+                        <div class="open-description highlight-box general">
                             <h4>I'm Dhruv Agarwal, a tech enthusiast, part-time Developer and full-time Learner with the aspiration of being an entrepreneur and with traits of a leader.</h4>
                             <br>
                             <p>Driven by my aspiration and supported by my courage, i believe to achieve anything with my hard work and dedication.
@@ -106,24 +115,28 @@
                         </div>
                     </div>
                     <div onclick="changeBack('backend', 'background-black')" class="primary-black col-md-6">
-                        <div class=" open-description highlight-box backend">
-                            <p>I have worked on Backend Frameworks like <b>Django, NodeJS, ExpressJS, Laravel, Code Ignitor</b>. Backend role made me feel working on something i meant to work on. Working on Backend always placed me in a comfortable position to develop what I wanted to.</p>
+                        <div class="open-description highlight-box backend">
+                            <p class="layer-100">I have worked on Backend Frameworks like <b>Django, NodeJS, ExpressJS, Laravel, Code Ignitor</b>. Backend role made me feel working on something i meant to work on. Working on Backend always placed me in a comfortable position to develop what I wanted to.</p>
+                            <img class="layer-50" src="./img/backend_logo.png">
                         </div>
                     </div>
                     <div onclick="changeBack('frontend', 'background-yellow');" class="primary-black col-md-6">
-                        <div class=" open-description highlight-box frontend">
-                            <p>I love to work on frontend role it allows to put out my creativity onto Sketch board and then to screen. Frontend Frameworks i have used are <b>AngularJS, Angular 5, Angular 6,jQuery, Bootstrap</b>. Frontend made me feel working on something i believe i can create something that can blow people mind. Working on Backend always placed me in a position where i need to think out of the box to develop what I wanted to.</p>
+                        <div class="open-description highlight-box frontend">
+                            <p class="layer-100">I love to work on frontend role it allows to put out my creativity onto Sketch board and then to screen. Frontend Frameworks i have used are <b>AngularJS, Angular 5, Angular 6,jQuery, Bootstrap</b>. Frontend made me feel working on something i believe i can create something that can blow people mind. Working on Backend always placed me in a position where i need to think out of the box to develop what I wanted to.</p>
+                            <img class="layer-50" src="./img/frontend_logo.png">
                         </div>
                     </div>
                     <div onclick="changeBack('database', 'background-green')" class=" primary-black col-md-6">
-                        <div class=" open-description highlight-box database">
-                            <p>I love to work on Data it always made me wonder what we can't do with it. Some database technologies i have worked on are <b>MySQL, MongoDB</b>. Database Development made me push my limit to think ways to develop collections, structure and relations so that they are optimum as well as future-ready. Working on Database always allowed to extend limits of my thinking ability and find creative solutions.</p>
+                        <div class="open-description highlight-box database">
+                            <p class="layer-100">I love to work on Data it always made me wonder what we can't do with it. Some database technologies i have worked on are <b>MySQL, MongoDB</b>. Database Development made me push my limit to think ways to develop collections, structure and relations so that they are optimum as well as future-ready. Working on Database always allowed to extend limits of my thinking ability and find creative solutions.</p>
+                            <img class="layer-50" src="./img/database_logo.png">
                         </div>
                     </div>
                     <div onclick="changeBack('coding', 'background-blue')" class="primary-black col-md-6">
-                        <div class=" open-description highlight-box coding">
-                            <p>I love to Competetive coding but I like to do it just refresh and recharge my mind. I'm good at problem-solving and descent in optimising. I use languages like <b>Python, C, Java</b> and Python as the main competitive coding language. Competitive coding always made me feel that I have great scope to learn and solve problems.</p>
+                        <div class="open-description highlight-box coding">
+                            <p class="layer-100">I love to Competetive coding but I like to do it just refresh and recharge my mind. I'm good at problem-solving and descent in optimising. I use languages like <b>Python, C, Java</b> and Python as the main competitive coding language. Competitive coding always made me feel that I have great scope to learn and solve problems.</p>
                             <br>
+                            <img class="layer-50" src="./img/coding_logo.png">
                         </div>
                     </div>
                 </div>
@@ -135,164 +148,182 @@
                     <h1>Projects</h1>
                 </div>
                 <hr class="bold-line">
-                <div class="items-section col-md-12">
+                <div class="items-section row">
                     <div class="col-md-6">
-                        <div class="item projects background-transparent-black col-md-12">
-                            <div class="col-sm-12">
-                                <div class="item-image col-sm-4">
-                                    <!-- <img src="./img/full_logo_light2.png"> -->
+                        <div class="projects backend-frontend-database col-md-12">
+                            <div class="item background-transparent-black row">
+                                <div class="col-sm-12">
+                                    <div class="item-image col-sm-4">
+                                        <img id="erp" src="./img/erp.png">
+                                    </div>
+                                    <div class="item-title primary-white col-sm-8">
+                                        <h4>KIET Group of Institution <b>(ERP System)</b></h4>
+                                    </div>
                                 </div>
-                                <div class="item-title primary-white col-sm-8">
-                                    <h4>KIET Group of Institution <b>(ERP System)</b></h4>
+                                <div class="col-sm-12">
+                                    <br>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <br>
-                            </div>
-                            <div class="item-description primary-complementary primary-detail col-sm-12">
-                                I have been part of this project since 2017, we're here day and night to provide our institute with the ecosystem, such that they could perform every task on the digital platform with capabilities of real-time data sensing and analysis.
-                                It is my major project, it has achieved my milestone few are:
-                                <ol>
-                                    <li>Reduced time for checking the Progress report of students and planning study structure accordingly.
-                                    <li>It also allowed reducing unnecessary paperwork and improved transparency in the system.
-                                    <li>It added value to the decision taken at the management level due to there basis is now data-driven.
-                                </ol>
-                            </div>
-                            <div class="item-description primary-complementary secondary-detail col-sm-12">
-                                Its an ecosystem so it is developed using different stacks and techology to provide a solution that is fast and feasible.
-                                Some of the technologies are:
-                                <ol>
-                                    <li><b>Frontend Technologies:-</b>
-                                        <ul>
-                                            <li>AngularJS</li>
-                                            <li>jQuery</li>
-                                            <li>React Native</li>
-                                            <li>Bootstrap</li>
-                                        </ul>
-                                    <li><b>Backend Technologies:-</b>
-                                        <ul>
-                                            <li>Django</li>
-                                            <li>Core PHP</li>
-                                            <li>Code Ignitor</li>
-                                        </ul>
-                                    <li><b>Database Technologies:-</b>
-                                        <ul>
-                                            <li>MySQL(RDBMS)</li>
-                                        </ul>
-                                </ol>
-                            </div>
-                            <div class="item-other col-sm-12">
-                                <br>
-                                <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
-                                    <span class="button-text">READ TECH</span>
-                                    <span class="button-text" style="display: none">READ STORY</span>
-                                </button>
+                                <div class="item-description primary-complementary primary-detail col-sm-12">
+                                    I have been part of this project since 2017, we're here day and night to provide our institute with the ecosystem, such that they could perform every task on the digital platform with capabilities of real-time data sensing and analysis.
+                                    It is my major project, it has achieved my milestone few are:
+                                    <ol>
+                                        <li>Reduced time for checking the Progress report of students and planning study structure accordingly.</li>
+                                        <li>It also allowed reducing unnecessary paperwork and improved transparency in the system.</li>
+                                        <li>It added value to the decision taken at the management level due to there basis is now data-driven.</li>
+                                    </ol>
+                                </div>
+                                <div class="item-description primary-complementary secondary-detail col-sm-12">
+                                    It's an ecosystem so it is developed using different stacks and technology to provide a solution that is fast and feasible.
+                                    Some of the technologies are:
+                                    <ol>
+                                        <li><b>Frontend Technologies:-</b>
+                                            <ul>
+                                                <li>AngularJS</li>
+                                                <li>jQuery</li>
+                                                <li>React Native</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Backend Technologies:-</b>
+                                            <ul>
+                                                <li>Django</li>
+                                                <li>Core PHP</li>
+                                                <li>Code Ignitor</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Database Technologies:-</b>
+                                            <ul>
+                                                <li>MySQL(RDBMS)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="item-other col-sm-12">
+                                    <br>
+                                    <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
+                                        <span class="button-text">READ TECH</span>
+                                        <span class="button-text" style="display: none">READ STORY</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="item projects background-transparent-black col-md-12">
-                            <div class="col-sm-12">
-                                <div class="item-image col-sm-4">
-                                    <!-- <img src="./img/full_logo_light2.png"> -->
+                        <div class="projects backend-database col-md-12">
+                            <div class="item background-transparent-black row">
+                                <div class="col-sm-12">
+                                    <div class="item-image col-sm-4">
+                                        <img id="prabuddha" src="./img/prabuddha.png">
+                                    </div>
+                                    <div class="item-title primary-white col-sm-8">
+                                        <h4>Prabuddha2.0 Website</h4>
+                                    </div>
                                 </div>
-                                <div class="item-title primary-white col-sm-8">
-                                    <h4>Prabuddha2.0 Website</h4>
+                                <div class="col-sm-12">
+                                    <br>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <br>
-                            </div>
-                            <div class="item-description primary-complementary primary-detail col-sm-12">
-                                I have been part taken it as a side project to learn new things, I was tech-lead of event responsible for smooth conduction of event through complete digital system and online payment. This endevor gived me new experience and learnings for future. I tested my skills my developing whole site from scratch to deployment in a week.
-                                I made new friend while working on this.
-                                <ol>
-                                    <li>Reduced time for registration progess.
-                                    <li>Provided real-time data of participation and payemnt.
-                                    <li>PayTM payment gateway for online payment.
-                                </ol>
-                            </div>
-                            <div class="item-description primary-complementary secondary-detail col-sm-12">
-                                Its an ecosystem so it is developed using fast and flexible frameworks. Here, I played major role as Backend-Developer
-                                Some of the technologies are:
-                                <ol>
-                                    <li><b>Frontend Technologies:-</b>
-                                        <ul>
-                                            <li>AngularJS</li>
-                                            <li>HTML</li>
-                                            <li>Bootstrap</li>
-                                        </ul>
-                                    <li><b>Backend Technologies:-</b>
-                                        <ul>
-                                            <li>ExpressJS</li>
-                                            <li>NodeJS</li>
-                                        </ul>
-                                    <li><b>Database Technologies:-</b>
-                                        <ul>
-                                            <li>Mongo(Non-RDMS)</li>
-                                        </ul>
-                                </ol>
-                            </div>
-                            <div class="item-other col-sm-12">
-                                <br>
-                                <button type="button" onclick="readMore(1);" class="btn border-btn btn-sm primary-complementary">
-                                    <span class="button-text">READ TECH</span>
-                                    <span class="button-text" style="display: none">READ STORY</span>
-                                </button>
+                                <div class="item-description primary-complementary primary-detail col-sm-12">
+                                    I have been taken part in it as a side project to learn new things, I was tech-lead of event responsible for smooth conduction of event through the complete digital system and online payment. This endeavour gave me new experience and learnings for the future. I tested my skills my developing whole site from scratch to deployment in a week.
+                                    I made new friends while working on this.
+                                    <ol>
+                                        <li>Reduced time for registration progess.</li>
+                                        <li>Provided real-time data of participation and payemnt.</li>
+                                        <li>PayTM payment gateway for online payment.</li>
+                                    </ol>
+                                </div>
+                                <div class="item-description primary-complementary secondary-detail col-sm-12">
+                                    It's an ecosystem so it is developed using fast and flexible frameworks. Here, I played a major role as Backend-Developer
+                                    Some of the technologies are:
+                                    <ol>
+                                        <li><b>Frontend Technologies:-</b>
+                                            <ul>
+                                                <li>AngularJS</li>
+                                                <li>HTML</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Backend Technologies:-</b>
+                                            <ul>
+                                                <li>ExpressJS</li>
+                                                <li>NodeJS</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Database Technologies:-</b>
+                                            <ul>
+                                                <li>Mongo(Non-RDMS)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="item-other col-sm-12">
+                                    <br>
+                                    <button type="button" onclick="readMore(1);" class="btn border-btn btn-sm primary-complementary">
+                                        <span class="button-text">READ TECH</span>
+                                        <span class="button-text" style="display: none">READ STORY</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="clearfix"></div>
                     <div class="col-md-6">
-                        <div class="item projects background-transparent-black col-md-12">
-                            <div class="col-sm-12">
-                                <div class="item-image col-sm-4">
-                                    <!-- <img src="./img/full_logo_light2.png"> -->
+                        <div class="projects backend-frontend-database col-md-12">
+                            <div class="item background-transparent-black row">
+                                <div class="col-sm-12">
+                                    <div class="item-image col-sm-4">
+                                        <img id="innotech" src="./img/innotech.png">
+                                    </div>
+                                    <div class="item-title primary-white col-sm-8">
+                                        <h4>Innotech2K18 <b>(Inter-college Innovation fest)</b></h4>
+                                    </div>
                                 </div>
-                                <div class="item-title primary-white col-sm-8">
-                                    <h4>Innotech2K18 <b>(Inter-college Innovation fest)</b></h4>
+                                <div class="col-sm-12">
+                                    <br>
                                 </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <br>
-                            </div>
-                            <div class="item-description primary-complementary primary-detail col-sm-12">
-                                I joined the project under the guidance of one my senior, we have to develop a complete system to organise digital based solution for event registration, payment and monitoring, and that in limited time framework.
-                                But by hardwork of us we able to achieve a platform, which was better than what the stack-holders expected. I also get chance to be part of core committe and manage the event from the ground.
-                                <ol>
-                                    <li>Reduced time for registration progess and allow verification of participants.
-                                    <li>Provided real-time data of participation, event running and payments.
-                                    <li>PayTM payment gateway for online payment.
-                                </ol>
-                            </div>
-                            <div class="item-description primary-complementary secondary-detail col-sm-12">
-                                Its an ecosystem so it is developed using fast and flexible frameworks. Here, I played major role as Frontend-Developer
-                                Some of the technologies are:
-                                <ol>
-                                    <li><b>Frontend Technologies:-</b>
-                                        <ul>
-                                            <li>jQuery</li>
-                                            <li>Bootstrap</li>
-                                        </ul>
-                                    <li><b>Backend Technologies:-</b>
-                                        <ul>
-                                            <li>Laravel</li>
-                                            <li>PHP</li>
-                                        </ul>
-                                    <li><b>Database Technologies:-</b>
-                                        <ul>
-                                            <li>MySQL(RDBMS)</li>
-                                        </ul>
-                                </ol>
-                            </div>
-                            <div class="item-other col-sm-12">
-                                <br>
-                                <button type="button" onclick="readMore(2);" class="btn border-btn btn-sm primary-complementary">
-                                    <span class="button-text">READ TECH</span>
-                                    <span class="button-text" style="display: none">READ STORY</span>
-                                </button>
+                                <div class="item-description primary-complementary primary-detail col-sm-12">
+                                    I joined the project under the guidance of one my senior, we have to develop a complete system to organise digital-based solution for event registration, payment and monitoring, and that in limited time framework.
+                                    But by hard work of us we able to achieve a platform, which was better than what the stack-holders expected. I also get the chance to be part of the core committee and manage the event from the ground.
+                                    <ol>
+                                        <li>Reduced time for registration progess and allow verification of participants.</li>
+                                        <li>Provided real-time data of participation, event running and payments.</li>
+                                        <li>PayTM payment gateway for online payment.</li>
+                                    </ol>
+                                </div>
+                                <div class="item-description primary-complementary secondary-detail col-sm-12">
+                                    It's an ecosystem so it is developed using fast and flexible frameworks. Here, I played a major role as Frontend-Developer
+                                    Some of the technologies are:
+                                    <ol>
+                                        <li><b>Frontend Technologies:-</b>
+                                            <ul>
+                                                <li>jQuery</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Backend Technologies:-</b>
+                                            <ul>
+                                                <li>Laravel</li>
+                                                <li>PHP</li>
+                                            </ul>
+                                        </li>
+                                        <li><b>Database Technologies:-</b>
+                                            <ul>
+                                                <li>MySQL(RDBMS)</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="item-other col-sm-12">
+                                    <br>
+                                    <button type="button" onclick="readMore(2);" class="btn border-btn btn-sm primary-complementary">
+                                        <span class="button-text">READ TECH</span>
+                                        <span class="button-text" style="display: none">READ STORY</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="backend-frontend-database-coding col-md-12" style="text-align: right; padding-right: 100px;">
+                        <div class="more-soon"><i> More coming soon ...</i></div>
                     </div>
                 </div>
             </div>
@@ -304,106 +335,140 @@
                 <h1>Internships</h1>
             </div>
             <hr class="bold-line">
-            <div class="items-section primary-black col-md-12">
+            <div class="items-section primary-black row">
                 <div class="col-md-6">
-                    <div class="item projects bordered-container-extra background-transparent col-md-12">
-                        <div class="col-sm-12">
-                            <div class="item-title primary-black col-sm-12">
-                                <h4>KIET Group of Institution <b>(ERP System)</b></h4>
+                    <div class="projects backend-frontend-database col-md-12">
+                        <div class="item bordered-container-extra background-transparent row">
+                            <div class="col-sm-12">
+                                <div class="item-title primary-black col-sm-12">
+                                    <h4>KIET Group of Institution <b>(ERP System)</b></h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <br>
-                        </div>
-                        <div class="item-description primary-black col-sm-12">
-                            I have been part of this project since 2017, we're here day and night to provide our institute with ecosystem, such that they could perform every task on digital platform with capabilities of real-time data sensing and analysis.
-                            It is my major project, it has achieved my milestone few are:
-                            <ol>
-                                <li>Reduced time for checking the Progess report of students and planning study structure accordingly.
-                                <li>It also allowed to reduce unneccessary paper work and impoved transparency in the system.
-                                <li>It added value to the decision taken at the management level due to there basis is now data-drived.
-                            </ol>
-                        </div>
-                        <div class="item-description primary-black col-sm-12">
-                            Its an ecosystem so it is developed using different stacks and techology to provide a solution that is fast and feasible.
-                            Some of the technologies are:
-                            <ol>
-                                <li><b>Frontend Technologies:-</b>
-                                    <ul>
-                                        <li>AngularJS</li>
-                                        <li>jQuery</li>
-                                        <li>React Native</li>
-                                        <li>Bootstrap</li>
-                                    </ul>
-                                <li><b>Backend Technologies:-</b>
-                                    <ul>
-                                        <li>Django</li>
-                                        <li>Core PHP</li>
-                                        <li>Code Ignitor</li>
-                                    </ul>
-                                <li><b>Database Technologies:-</b>
-                                    <ul>
-                                        <li>MySQL(RDBMS)</li>
-                                    </ul>
-                            </ol>
-                        </div>
-                        <div class="item-other col-sm-12">
-                            <br>
-                            <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
-                                DOWNLOAD DOCUMENT <i class="fa fa-download"></i>
-                            </button>
+                            <div class="col-sm-12">
+                                <br>
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                I have been part of this project since 2017, we're here day and night to provide our institute with the ecosystem, such that they could perform every task on the digital platform with capabilities of real-time data sensing and analysis.
+                                It is my major project, it has achieved my milestone few are:
+                                <ol>
+                                    <li>Reduced time for checking the Progess report of students and planning study structure accordingly.</li>
+                                    <li>It also allowed to reduce unneccessary paper work and impoved transparency in the system.</li>
+                                    <li>It added value to the decision taken at the management level due to there basis is now data-drived.</li>
+                                </ol>
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                It's an ecosystem so it is developed using different stacks and technology to provide a solution that is fast and feasible.
+                                Some of the technologies are:
+                                <ol>
+                                    <li><b>Frontend Technologies:-</b>
+                                        <ul>
+                                            <li>AngularJS</li>
+                                            <li>jQuery</li>
+                                            <li>React Native</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Backend Technologies:-</b>
+                                        <ul>
+                                            <li>Django</li>
+                                            <li>Core PHP</li>
+                                            <li>Code Ignitor</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Database Technologies:-</b>
+                                        <ul>
+                                            <li>MySQL(RDBMS)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="item-other col-sm-12">
+                                <br>
+                                <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
+                                    DOWNLOAD DOCUMENT <i class="fa fa-download"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="item projects bordered-container-extra background-transparent col-md-12">
-                        <div class="col-sm-12">
-                            <div class="item-title primary-black col-sm-12">
-                                <h4>KIET Group of Institution <b>(ERP System)</b></h4>
+                    <div class="projects frontend col-md-12">
+                        <div class="item bordered-container-extra background-transparent row">
+                            <div class="col-sm-12">
+                                <div class="item-title primary-black col-sm-12">
+                                    <h4>Nanoarch Software Solutions<b></b></h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <br>
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                I had the opportunity to be part of this very progressive company, they're working on a range of projects and products. My role was particularly related to the frontend part of some application. I here get a chance to work with very dedicated and knowledgable guides as my managers.
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                Here, I played role as a Frontend-Developer intern.
+                                Some of the technologies are:
+                                <ol>
+                                    <li><b>Frontend Technologies:-</b>
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>JavaScript</li>
+                                            <li>jQuery</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="item-other col-sm-12">
+                                <br>
+                                <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
+                                    DOWNLOAD DOCUMENT <i class="fa fa-download"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <br>
-                        </div>
-                        <div class="item-description primary-black col-sm-12">
-                            I have been part of this project since 2017, we're here day and night to provide our institute with ecosystem, such that they could perform every task on digital platform with capabilities of real-time data sensing and analysis.
-                            It is my major project, it has achieved my milestone few are:
-                            <ol>
-                                <li>Reduced time for checking the Progess report of students and planning study structure accordingly.
-                                <li>It also allowed to reduce unneccessary paper work and impoved transparency in the system.
-                                <li>It added value to the decision taken at the management level due to there basis is now data-drived.
-                            </ol>
-                        </div>
-                        <div class="item-description primary-black col-sm-12">
-                            Its an ecosystem so it is developed using different stacks and techology to provide a solution that is fast and feasible.
-                            Some of the technologies are:
-                            <ol>
-                                <li><b>Frontend Technologies:-</b>
-                                    <ul>
-                                        <li>AngularJS</li>
-                                        <li>jQuery</li>
-                                        <li>React Native</li>
-                                        <li>Bootstrap</li>
-                                    </ul>
-                                <li><b>Backend Technologies:-</b>
-                                    <ul>
-                                        <li>Django</li>
-                                        <li>Core PHP</li>
-                                        <li>Code Ignitor</li>
-                                    </ul>
-                                <li><b>Database Technologies:-</b>
-                                    <ul>
-                                        <li>MySQL(RDBMS)</li>
-                                    </ul>
-                            </ol>
-                        </div>
-                        <div class="item-other col-sm-12">
-                            <br>
-                            <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
-                                DOWNLOAD DOCUMENT <i class="fa fa-download"></i>
-                            </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="projects backend-database col-md-12">
+                        <div class="item bordered-container-extra background-transparent row">
+                            <div class="col-sm-12">
+                                <div class="item-title primary-black col-sm-12">
+                                    <h4>UpXselling Products & Services Pvt. Ltd. <b></b></h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <br>
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                I had the opportunity to be part of this very progressive company, they're working on a range of projects and products. My role was particularly related to the system for Hotels. I here get a chance to work with very dedicated and knowledgable guides as my managers.
+                            </div>
+                            <div class="item-description primary-black col-sm-12">
+                                It's an ecosystem so it is developed using fast and flexible frameworks. Here, I played a major role as Backend-Developer.
+                                Some of the technologies are:
+                                <ol>
+                                    <li><b>Backend Technologies:-</b>
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>Spring</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>Database Technologies:-</b>
+                                        <ul>
+                                            <li>MySQL(RDBMS)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="item-other col-sm-12">
+                                <br>
+                                <button type="button" onclick="readMore(0);" class="btn border-btn btn-sm primary-complementary">
+                                    DOWNLOAD DOCUMENT <i class="fa fa-download"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="backend-frontend-database-coding col-md-12" style="text-align: right; padding-right: 100px;">
+                    <div class="more-soon"><i> More coming soon ...</i></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
