@@ -255,9 +255,8 @@ a:active {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url('./../img/sixth.png');
-    background-size: 20px;
-
+    background-image: url('./../img/seventh.svg');
+    background-size: 8px;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -269,7 +268,11 @@ a:active {
     padding: 16px 18px;
     background-color: #FFF;
     border-radius: 4px;
-    box-shadow: 0 0 2px #F9FBFB;
+    box-shadow: 0 0 4px #F9FBFB;
+}
+
+.general {
+    box-shadow: 0 0 4px #255555;
 }
 
 .highlight-box h1,
@@ -322,6 +325,17 @@ a:active {
     position: absolute;
     right: 20px;
     top: 0;
+}
+@media (max-width: 360px){
+    .highlight-box p {
+        width: 100%;
+        display: block;
+    }
+
+    .highlight-box img {
+        display: block;
+        position: relative;
+    }
 }
 
 .border-btn,
@@ -499,144 +513,6 @@ a:active {
     height: 96%;
 }
 
-.header-design:hover {
-    -webkit-animation-name: animate-icon;
-    animation-name: animate-icon;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-
-@-webkit-keyframes animate-icon {
-    0% {
-        background: linear-gradient(65deg, #6CBF84 15%, #EFAA52 15%, #7095B0 15%, #FFF 30%);
-    }
-
-    5% {
-        background: linear-gradient(75deg, #6CBF84 15%, #EFAA52 10%, #7095B0 10%, #FFF 30%);
-    }
-
-    10% {
-        background: linear-gradient(85deg, #7095B0 15%, #EFAA52 10%, #6CBF84 15%, #FFF 30%);
-    }
-
-    15% {
-        background: linear-gradient(95deg, #7095B0 5%, #EFAA52 15%, #6CBF84 15%, #FFF 30%);
-    }
-
-    20% {
-        background: linear-gradient(105deg, #EFAA52 10%, #6CBF84 15%, #7095B0 5%, #FFF 30%);
-    }
-
-    25% {
-        background: linear-gradient(115deg, #EFAA52 15%, #6CBF84 5%, #7095B0 15%, #FFF 30%);
-    }
-
-    30% {
-        background: linear-gradient(125deg, #6CBF84 10%, #7095B0 10%, #EFAA52 5%, #FFF 30%);
-    }
-
-    35% {
-        background: linear-gradient(135deg, #6CBF84 5%, #7095B0 5%, #EFAA52 5%, #FFF 30%);
-    }
-
-    40% {
-        background: linear-gradient(145deg, #6CBF84 5%, #EFAA52 5%, #7095B0 5%, #FFF 30%);
-    }
-
-    45% {
-        background: linear-gradient(155deg, #6CBF84 4%, #EFAA52 4%, #7095B0 5%, #FFF 30%);
-    }
-
-    50% {
-        background: linear-gradient(165deg, #6CBF84 3%, #EFAA52 3%, #7095B0 5%, #FFF 30%);
-    }
-
-    55% {
-        background: linear-gradient(175deg, #6CBF84 2%, #EFAA52 2%, #7095B0 5%, #FFF 30%);
-    }
-
-    75% {
-        background: linear-gradient(10deg, #6CBF84 2%, #EFAA52 1%, #7095B0 1%, #FFF 30%);
-    }
-
-    80% {
-        background: linear-gradient(20deg, #7095B0 3%, #6CBF84 2%, #EFAA52 3%, #FFF 30%);
-    }
-
-    90% {
-        background: linear-gradient(30deg, #6CBF84 5%, #7095B0 5%, #EFAA52 5%, #FFF 30%);
-    }
-
-    100% {
-        background: linear-gradient(60deg, #6CBF84 15%, #EFAA52 15%, #7095B0 5%, #FFF 30%);
-    }
-}
-
-@keyframes animate-icon {
-    0% {
-        background: linear-gradient(65deg, #6CBF84 15%, #EFAA52 15%, #7095B0 15%, #FFF 30%);
-    }
-
-    5% {
-        background: linear-gradient(75deg, #6CBF84 15%, #EFAA52 10%, #7095B0 10%, #FFF 30%);
-    }
-
-    10% {
-        background: linear-gradient(85deg, #7095B0 15%, #EFAA52 10%, #6CBF84 15%, #FFF 30%);
-    }
-
-    15% {
-        background: linear-gradient(95deg, #7095B0 5%, #EFAA52 15%, #6CBF84 15%, #FFF 30%);
-    }
-
-    20% {
-        background: linear-gradient(105deg, #EFAA52 10%, #6CBF84 15%, #7095B0 5%, #FFF 30%);
-    }
-
-    25% {
-        background: linear-gradient(115deg, #EFAA52 15%, #6CBF84 5%, #7095B0 15%, #FFF 30%);
-    }
-
-    30% {
-        background: linear-gradient(125deg, #6CBF84 10%, #7095B0 10%, #EFAA52 5%, #FFF 30%);
-    }
-
-    35% {
-        background: linear-gradient(135deg, #6CBF84 5%, #7095B0 5%, #EFAA52 5%, #FFF 30%);
-    }
-
-    40% {
-        background: linear-gradient(145deg, #6CBF84 5%, #EFAA52 5%, #7095B0 5%, #FFF 30%);
-    }
-
-    45% {
-        background: linear-gradient(155deg, #6CBF84 4%, #EFAA52 4%, #7095B0 5%, #FFF 30%);
-    }
-
-    50% {
-        background: linear-gradient(165deg, #6CBF84 3%, #EFAA52 3%, #7095B0 5%, #FFF 30%);
-    }
-
-    55% {
-        background: linear-gradient(175deg, #6CBF84 2%, #EFAA52 2%, #7095B0 5%, #FFF 30%);
-    }
-
-    75% {
-        background: linear-gradient(10deg, #6CBF84 2%, #EFAA52 1%, #7095B0 1%, #FFF 30%);
-    }
-
-    80% {
-        background: linear-gradient(20deg, #7095B0 3%, #6CBF84 2%, #EFAA52 3%, #FFF 30%);
-    }
-
-    90% {
-        background: linear-gradient(30deg, #6CBF84 5%, #7095B0 5%, #EFAA52 5%, #FFF 30%);
-    }
-
-    100% {
-        background: linear-gradient(60deg, #6CBF84 15%, #EFAA52 15%, #7095B0 5%, #FFF 30%);
-    }
+.hacker-badge {
+    width: 80%;
 }
