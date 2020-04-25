@@ -2,7 +2,8 @@ var readTech = []
 
 function closeSideBar() {
     document.getElementById('side-bar').style.width = 0;
-    document.getElementById('open').style.display = "block";
+    document.getElementById('open').style.display = "inline";
+    document.getElementById('home').style.display = "inline";
     document.getElementById('close').style.display = "none";
     document.getElementById('content-container').style.left = 0;
     var list = document.getElementsByClassName('nav-button');
@@ -15,6 +16,7 @@ function closeSideBar() {
 function openSideBar() {
     document.getElementById('side-bar').style.width = "192px";
     document.getElementById('open').style.display = "none";    
+    document.getElementById('home').style.display = "none";
     document.getElementById('close').style.display = "block";
     var list = document.getElementsByClassName('nav-button');
     for (x = 0; x < list.length; x++) {
@@ -22,6 +24,8 @@ function openSideBar() {
     }
 }
 
+closeSideBar();
+openSideBar();
 
 function changeBack(type, color) {
 
@@ -29,7 +33,7 @@ function changeBack(type, color) {
     var list = document.getElementsByClassName('open-description');
     for (x = 0; x < list.length; x++) {
         list[x].style.display = "none";
-        list[x].parentElement.className = list[x].parentElement.className.replace("md-6", "md-12");
+        list[x].parentElement.parentElement.className = list[x].parentElement.parentElement.className.replace("md-6", "md-12");
     }
 
     var list = document.getElementsByClassName(type);
@@ -65,8 +69,8 @@ function changeHome() {
     var temp = "";
     for (x = 0; x < list.length; x++) {
         list[x].style.display = "block";
-        temp = list[x].parentElement.className;
-        list[x].parentElement.className = temp.replace("md-12", "md-6");
+        temp = list[x].parentElement.parentElement.className;
+        list[x].parentElement.parentElement.className = temp.replace("md-12", "md-6");
     }
 
     var list = document.getElementsByClassName('general');

@@ -202,7 +202,8 @@ a:active {
     width: 0;
 }
 
-#close,
+#close, 
+#home,
 #open {
     float: left;
     top: 0;
@@ -210,10 +211,14 @@ a:active {
     margin: 0;
     padding: 10px;
     border-bottom-right-radius: 50%;
-    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 #open {
+    border-bottom-right-radius: 0 ;
+}
+
+#open, #home {
     display: none;
 }
 
@@ -251,6 +256,10 @@ a:active {
 
 .bordered-container-extra {
     border: 2px solid;
+}
+
+.all-center {
+    padding: 10px;
 }
 
 #content-container {
@@ -327,20 +336,27 @@ a:active {
 }
 
 .highlight-box img {
-    width: 200px;
     position: absolute;
-    right: 20px;
+    right: 1%;
+    max-width: 30%;
+    max-height: 100%;
     top: 0;
 }
 @media (max-width: 360px){
     .highlight-box p {
         width: 100%;
         display: block;
+        z-index: 8;
+        position: relative;
     }
 
     .highlight-box img {
-        display: block;
         position: relative;
+        max-width: 80%;
+        max-height: 80%;
+        z-index: 6;
+        left: 0;
+        margin: 4px auto; 
     }
 }
 
@@ -370,16 +386,23 @@ a:active {
 }
 
 .border-icon {
+    display: block;
     float: left;
     width: 28px;
     height: 28px;
     padding: 4px;
-    margin-left: 2px;
+    margin: 2px;
     font-weight: 700;
     border: 2px solid #3EBC8C;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+}
+
+
+.stack-color {
+    border-color: #F48024;
+    color: #F48024;
 }
 
 .resume-color {
@@ -405,6 +428,11 @@ a:active {
 .github-color {
     border-color: #333;
     color: #333;
+}
+
+.stack-color:hover {
+    background: #F48024;
+    color: #FFF;
 }
 
 .resume-color:hover {
@@ -438,6 +466,7 @@ a:active {
     z-index: 999;
 }
 
+
 .items-section {
     /*border: 1px solid yellow;*/
 }
@@ -459,7 +488,7 @@ a:active {
 .item-image {
     background: rgba(0, 0, 0, 0.5);
     padding: 1px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -476,13 +505,20 @@ a:active {
     width: 120px;
 }
 
+#easy {
+    margin-top: 25%;
+    width: 100px;
+}
+
 #erp {
     padding: 4px;
+    padding-right: 6px;
     width: 100px;
 }
 
 #innotech {
     padding: 4px;
+    padding-left: 8px;
     width: 94px;
 }
 
@@ -520,5 +556,5 @@ a:active {
 }
 
 .hacker-badge {
-    width: 80%;
+    width: 130px
 }
