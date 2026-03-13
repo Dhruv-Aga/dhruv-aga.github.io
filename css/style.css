@@ -48,6 +48,13 @@ button { font: inherit; color: inherit; }
 .skills-grid .chips { margin-top: 10px; }
 .chips span { background: rgba(122,162,255,.16); border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d6e2ff; font-size: .9rem; }
 
+
+.certification-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.certification-card { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: center; }
+.certification-card img { width: 72px; height: 72px; object-fit: contain; }
+.certification-card h3 { margin: 0 0 8px; }
+.certification-card a { display: inline-block; margin-top: 10px; color: var(--accent); font-weight: 600; }
+
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
