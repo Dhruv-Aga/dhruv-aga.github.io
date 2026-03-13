@@ -49,23 +49,11 @@ button { font: inherit; color: inherit; }
 .chips span { background: rgba(122,162,255,.16); border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d6e2ff; font-size: .9rem; }
 
 
-.resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
-.resource-meta { color: #c5d4f8 !important; font-size: .92rem; }
-.resource-link {
-  display: inline-flex;
-  align-items: center;
-  margin-top: 8px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 9px 14px;
-  color: var(--text);
-  transition: border-color .2s ease, transform .2s ease, background-color .2s ease;
-}
-.resource-link:hover {
-  border-color: rgba(122,162,255,.85);
-  background: rgba(122,162,255,.15);
-  transform: translateY(-1px);
-}
+.certification-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.certification-card { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: center; }
+.certification-card img { width: 72px; height: 72px; object-fit: contain; }
+.certification-card h3 { margin: 0 0 8px; }
+.certification-card a { display: inline-block; margin-top: 10px; color: var(--accent); font-weight: 600; }
 
 .bento-grid {
   display: grid;
