@@ -33,7 +33,7 @@ button { font: inherit; color: inherit; }
 .hero-image img { border-radius: 24px; border: 1px solid var(--border); box-shadow: 0 30px 60px rgba(0,0,0,.45); }
 
 .story-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-.card, .timeline-content { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; backdrop-filter: blur(8px); }
+.card, .timeline-content { background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 22px; backdrop-filter: blur(8px); margin-bottom: 10px;}
 .card p, .timeline-content p, .timeline-content li { color: var(--muted); line-height: 1.7; }
 
 .timeline { background: linear-gradient(180deg, rgba(99,230,190,.05), transparent); }
