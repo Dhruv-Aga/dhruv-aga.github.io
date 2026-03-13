@@ -49,9 +49,10 @@ button { font: inherit; color: inherit; }
 .chips span { background: rgba(122,162,255,.16); border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d6e2ff; font-size: .9rem; }
 
 
-.certification-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.certification-subtitle { margin: 10px 0 16px; font-size: 1.1rem; color: #d6e2ff; }
+.certification-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 24px; }
 .certification-card { display: grid; grid-template-columns: 88px 1fr; gap: 16px; align-items: center; }
-.certification-card img { width: 72px; height: 72px; object-fit: contain; }
+.certification-card img { width: 72px; height: 72px; object-fit: contain; border-radius: 10px; background: rgba(8, 14, 28, .75); padding: 8px; border: 1px solid var(--border); }
 .certification-card h3 { margin: 0 0 8px; }
 .certification-card a { display: inline-block; margin-top: 10px; color: var(--accent); font-weight: 600; }
 
