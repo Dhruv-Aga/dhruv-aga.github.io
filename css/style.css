@@ -42,6 +42,10 @@ button { font: inherit; color: inherit; }
 .timeline-year { color: var(--accent); font-weight: 700; padding-top: 14px; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.skills-grid .card { margin: 0; }
+.skills-grid .chips { margin-top: 10px; }
 .chips span { background: rgba(122,162,255,.16); border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d6e2ff; font-size: .9rem; }
 
 .bento-grid {
