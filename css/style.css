@@ -48,6 +48,25 @@ button { font: inherit; color: inherit; }
 .skills-grid .chips { margin-top: 10px; }
 .chips span { background: rgba(122,162,255,.16); border: 1px solid var(--border); padding: 8px 12px; border-radius: 999px; color: #d6e2ff; font-size: .9rem; }
 
+
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.resource-meta { color: #c5d4f8 !important; font-size: .92rem; }
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 14px;
+  color: var(--text);
+  transition: border-color .2s ease, transform .2s ease, background-color .2s ease;
+}
+.resource-link:hover {
+  border-color: rgba(122,162,255,.85);
+  background: rgba(122,162,255,.15);
+  transform: translateY(-1px);
+}
+
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
