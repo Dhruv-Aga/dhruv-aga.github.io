@@ -1,7 +1,7 @@
 (function () {
   const reveals = document.querySelectorAll('.reveal');
   const progress = document.getElementById('scroll-indicator');
-  const projectCards = document.querySelectorAll('.project');
+  const bentoCards = document.querySelectorAll('.bento-card');
   const modal = document.getElementById('project-modal');
   const modalTitle = document.getElementById('modal-title');
   const modalStory = document.getElementById('modal-story');
@@ -14,7 +14,7 @@
         entry.target.classList.add('is-visible');
       }
     });
-  }, { threshold: 0.14 });
+  }, { threshold: 0.15 });
 
   reveals.forEach((el) => observer.observe(el));
 
@@ -26,7 +26,7 @@
   }
 
   function openProjectModal(card) {
-    if (!modal) return;
+    if (!modal || !card) return;
     modalTitle.textContent = card.dataset.projectTitle || 'Project';
     modalStory.textContent = card.dataset.projectStory || '';
     modalTech.textContent = card.dataset.projectTech || '';
@@ -34,14 +34,19 @@
     modal.showModal();
   }
 
-  projectCards.forEach((card) => {
+  bentoCards.forEach((card) => {
     card.addEventListener('click', () => openProjectModal(card));
   });
 
   modal?.addEventListener('click', (event) => {
     const rect = modal.getBoundingClientRect();
-    const inside = rect.top <= event.clientY && event.clientY <= rect.bottom && rect.left <= event.clientX && event.clientX <= rect.right;
-    if (!inside) modal.close();
+    const isInDialog = (
+      rect.top <= event.clientY &&
+      event.clientY <= rect.top + rect.height &&
+      rect.left <= event.clientX &&
+      event.clientX <= rect.left + rect.width
+    );
+    if (!isInDialog) modal.close();
   });
 
   window.addEventListener('scroll', updateProgress, { passive: true });
