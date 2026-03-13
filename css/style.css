@@ -50,26 +50,43 @@ button { font: inherit; color: inherit; }
 
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
 }
 .bento-card {
   border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border-radius: 20px;
   overflow: hidden;
   text-align: left;
   padding: 0;
   cursor: pointer;
-  transition: transform .25s ease, border-color .25s ease;
-  min-height: 210px;
-  grid-column: span 4;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+  min-height: 230px;
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
 }
-.bento-card:hover { transform: translateY(-4px); border-color: rgba(99,230,190,.8); }
-.bento-card img { width: 100%; height: 160px; object-fit: cover; border-bottom: 1px solid var(--border); }
-.bento-card span { display: block; padding: 14px 16px; font-weight: 600; }
-.bento-lg { grid-column: span 8; min-height: 260px; }
-.bento-wide { grid-column: span 12; }
+.bento-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(122,162,255,.75);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+.bento-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  background: rgba(8, 14, 28, .85);
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.bento-card span {
+  display: block;
+  padding: 14px 16px;
+  font-weight: 600;
+  color: #f1f5ff;
+}
+.bento-lg, .bento-wide { grid-column: auto; min-height: 230px; }
 
 .project-modal {
   width: min(680px, calc(100% - 24px));
@@ -104,5 +121,6 @@ button { font: inherit; color: inherit; }
   .hero { grid-template-columns: 1fr; padding-top: 100px; }
   .timeline-item { grid-template-columns: 1fr; }
   .timeline-year { padding-top: 0; }
-  .bento-card, .bento-lg, .bento-wide { grid-column: span 12; }
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-card, .bento-lg, .bento-wide { grid-column: auto; }
 }
