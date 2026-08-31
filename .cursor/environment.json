@@ -1,0 +1,18 @@
+{
+  "name": "Dhruv Agarwal Portfolio",
+  "install": "bash .cursor/scripts/install.sh",
+  "start": "bash .cursor/scripts/start.sh",
+  "ports": [
+    {
+      "name": "portfolio",
+      "port": 8000
+    }
+  ],
+  "terminals": [
+    {
+      "name": "portfolio-dev-server",
+      "command": "python3 -m http.server 8000 --bind 0.0.0.0",
+      "description": "Serves the static portfolio site from the repository root."
+    }
+  ]
+}
